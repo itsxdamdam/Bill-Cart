@@ -1,0 +1,75 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+}
+
+.box{
+  background: #600202;
+  color: #fff;
+  padding-top: 350px;
+  overflow: auto;
+}
+
+.box input{
+  width: 400px;
+  border-bottom: 4px #F0B429 solid !important;
+}
+
+.box .btn{
+  border: 2px #fff solid;
+  color: #fff;
+}
+
+.box .btn:hover {
+  background: #fff;
+  color: #333;
+}
+
+.gallery{
+  background: #fffdfd;
+}
+
+.gallery .row{
+  margin-bottom: 0px !important;
+}
+
+.im{
+  position: relative;
+  right: 14.8%;
+  margin-top: 250px;
+}
+
+.im-2{
+  position: relative;
+  right: 15%;
+  margin-top: 120px;
+}
+
+.im-3{
+  position: relative;
+  right: 15%;
+}
+
+.im-4{
+  position: relative;
+  right: 14.8%;
+  margin-top: 25px;
+}
+
+.im-5{
+  position: relative;
+  right: 14%;
+  margin-top: -120px;
+}
+
+.im-6{
+  position: relative;
+  right: 14%;
+  margin-top: -230px;
+}
+
