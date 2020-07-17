@@ -1,3 +1,7 @@
+<?php
+    header('Content-type: text/css; charset:UTF-8');
+?>
+
 *{
   margin: 0px;
   padding: 0px;
@@ -11,7 +15,7 @@ body{
 .box{
   background: #600202;
   color: #fff;
-  padding-top: 350px;
+  padding-top: 100px;
   overflow: auto;
 }
 
@@ -30,6 +34,14 @@ body{
   color: #333;
 }
 
+.bottom{
+  margin-top: 250px !important;
+}
+
+img:hover{
+  opacity: 0.5;
+}
+
 .gallery{
   background: #fffdfd;
 }
@@ -38,38 +50,96 @@ body{
   margin-bottom: 0px !important;
 }
 
+.gallery img{
+  width: 200px;
+}
+
+.btmt{
+  display: none;
+}
+
 .im{
-  position: relative;
-  right: 14.8%;
   margin-top: 250px;
 }
 
 .im-2{
-  position: relative;
-  right: 15%;
   margin-top: 120px;
 }
 
-.im-3{
-  position: relative;
-  right: 15%;
-}
-
 .im-4{
-  position: relative;
-  right: 14.8%;
+  margin-left: 15px;
   margin-top: 25px;
 }
 
 .im-5{
-  position: relative;
-  right: 14%;
   margin-top: -120px;
 }
 
 .im-6{
-  position: relative;
-  right: 14%;
   margin-top: -230px;
 }
 
+.modal-body{
+  background: #333;
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box{
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  .box .btn{
+    width: 300px;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .box .bottom{
+    display: none;
+  }
+
+  .gallery{
+    background: #f9f9f9;
+  }
+
+  .gallery img{
+    display: block;
+    padding: 10px;
+    margin: auto;
+  }
+  
+  .gallery .im{
+    margin-top: 0;
+  }
+
+  .gallery .im-2{
+    margin-top: 0;
+  }
+
+  .gallery .im-3{
+    margin-top: 0;
+  }
+
+  .gallery .im-4{
+    margin-top: 0;
+  }
+
+  .gallery .im-5{
+    margin-top: 0;
+  }
+
+  .gallery .im-6{
+    margin-top: 0;
+  }
+
+  .btmt{
+    display: block;
+  }
+}

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" type="text/css"  href="assets/style.css">
 
     <!-- JS -->
     <link rel="stylesheet" href="/assets/custom.js">
@@ -21,44 +22,116 @@
   </head>
   <body class="container-fluid">
     <div class="row">
-      <div class="box col pl-5">
-        <h1>Bill-<span class="font-weight-bold">Cart</span></h1>
-        <p class="summary font-weight-bold">Scan real life  object  and add items to cart </p>
-        <p class="intro">Bill-cart Allows you to add things to cart staright form billboards<br>scan advertiesd items on billboards and add to cart.</p>
-        <p class="subscribe">Be part of our Alpha users.  Do you want to get notified when the App <br>is ready? </p>
+      <div class="box col-md-6 col-sm-6">
+        <div class="col pl-5 mb-5 mt-3">
+          <h1>Bill-<span class="font-weight-bold">Cart</span></h1>
+          <p class="summary font-weight-bold mt-3">Scan real life  object  and add items to cart </p>
+          <p class="intro mt-2">Bill-cart Allows you to add things to cart staright form billboards<br>scan advertiesd items on billboards and add to cart.</p>
+          <p class="subscribe">Be part of our Alpha users.  Do you want to get notified when the App <br>is ready? </p>
 
-        <form action="">
-          <div class="form-inline">
-            <input type="email" class="form-control-lg border-0 rounded-0 border-bottom border-warning mt-md-3" placeholder="Enter e-mail to get notified">
-            <button type="button" class="btn btn-lg rounded-0 ml-3 mt-md-3">Submit</button>
+    
+          <form action="form.php" method="post">
+            <div class="form-inline mt-5">
+              <input type="email" id="email" name="email" class="form-control-lg border-0 rounded-0 border-bottom border-warning mt-md-3" placeholder="Enter e-mail to get notified" required>
+              <button type="submit" name="submit" class="btn btn-lg rounded-0 ml-3 mt-md-3">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="bottom bg-white p-3">
+          <h3 class="text-center text-dark">Available on</h3>
+          <div class="container text-center">
+            <img src="/assets/Images/5a902db97f96951c82922874 2.png" alt="store"/>
+            <img src="/assets/Images/google-play-badge 2.png" alt="store"/>
           </div>
-        </form>
-      </div>
-      <div class="gallery col">
+        </div>
+
+      </div>  
+
+      <div class="gallery col px-3 pt-2">
         <div class="row mt-5">
-          <div class="im pl-4">
-            <img src="/assets/Images/image.png" alt="image" class="inline-block">
+          <div class="im pl-4" data-toggle="modal" data-target="#img">
+            <img src="/assets/Images/Scan.png" alt="image" class="inline-block">
           </div>
-          <div class="im-2 pl-4">
-            <img src="/assets/Images/image-2.png" alt="image" class="inline-block">
+          <div class="im-2 pl-4" data-toggle="modal" data-target="#img1">
+            <img src="/assets/Images/Capture.png" alt="image" class="inline-block">
           </div>
-          <div class="im-3 pl-4">
-            <img src="/assets/Images/image-5.png" alt="image" class="inline-block">
+          <div class="im-3 pl-4" data-toggle="modal" data-target="#img2">
+            <img src="/assets/Images/Scanning.png" alt="image" class="inline-block">
           </div>
           <div class="sec row">
-            <div class="im-4 pl-4">
-              <img src="/assets/Images/image-2.png" alt="image" class="inline-block">
+            <div class="im-4 pl-4" data-toggle="modal" data-target="#img3">
+              <img src="/assets/Images/Add to cart.png" alt="image" class="inline-block">
             </div>
-            <div class="im-5 pl-4">
-              <img src="/assets/Images/image.png" alt="image" class="inline-block">
+            <div class="im-5 pl-4" data-toggle="modal" data-target="#img4">
+              <img src="/assets/Images/Payment.png" alt="image" class="inline-block">
             </div>
-            <div class="im-6 pl-4">
-              <img src="/assets/Images/image-5.png" alt="image" class="inline-block">
+            <div class="im-6 pl-4" data-toggle="modal" data-target="#img5">
+              <img src="/assets/Images/Hurray.png" alt="image" class="inline-block">
             </div>
           </div>
         </div>
-        
+        <div id="img" class="modal fade">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img src="/assets/Images/Scan.png" alt="image" class="w-50">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="img1" class="modal fade">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img src="/assets/Images/Capture.png" alt="image" class="w-50">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="img2" class="modal fade">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img src="/assets/Images/Scanning.png" alt="image" class="w-50">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="img3" class="modal fade">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img src="/assets/Images/Add to cart.png" alt="image" class="w-50">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="img4" class="modal fade">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img src="/assets/Images/Payment.png" alt="image" class="w-50">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="img5" class="modal fade">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img src="/assets/Images/Hurray.png" alt="image" class="w-50">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="btmt container text-center">
+        <img src="/assets/Images/5a902db97f96951c82922874 2.png" alt="store">
+        <img src="/assets/Images/google-play-badge 2.png" alt="store">
+      </div>
+
     </div>
 
     <!-- Optional JavaScript -->
