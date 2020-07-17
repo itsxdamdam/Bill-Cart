@@ -15,6 +15,8 @@
     <!-- JS -->
     <link rel="stylesheet" href="/assets/custom.js">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
@@ -22,24 +24,26 @@
   </head>
   <body class="container-fluid">
     <div class="row">
-      <div class="box col-md-6 col-sm-6">
+      <div class="box col-md-6 col-sm-6" data-aos="fade-up-right"]>
         <div class="col pl-5 mb-5 mt-3">
-          <h1>Bill-<span class="font-weight-bold">Cart</span></h1>
-          <p class="summary font-weight-bold mt-3">Scan real life  object  and add items to cart </p>
-          <p class="intro mt-2">Bill-cart Allows you to add things to cart staright form billboards<br>scan advertiesd items on billboards and add to cart.</p>
-          <p class="subscribe">Be part of our Alpha users.  Do you want to get notified when the App <br>is ready? </p>
+          <h1 data-aos="slide-right">Bill-<span class="font-weight-bold">Cart</span></h1>
+          <p class="summary font-weight-bold mt-3" data-aos="slide-left">Scan real life  object  and add items to cart </p>
+          <p class="intro mt-2" data-aos="fade-in">Bill-cart Allows you to add things to cart staright form billboards<br>scan advertiesd items on billboards and add to cart.</p>
+          <p class="subscribe" data-aos="fade-in">Be part of our Alpha users.  Do you want to get notified when the App <br>is ready? </p>
 
     
           <form action="form.php" method="post">
-            <div class="form-inline mt-5">
+            <div class="form-inline mt-5" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="3000">
               <input type="email" id="email" name="email" class="form-control-lg border-0 rounded-0 border-bottom border-warning mt-md-3" placeholder="Enter e-mail to get notified" required>
               <button type="submit" name="submit" class="btn btn-lg rounded-0 ml-3 mt-md-3">Submit</button>
             </div>
           </form>
         </div>
 
-        <div class="bottom bg-white p-3">
-          <h3 class="text-center text-dark">Available on</h3>
+        <div class="bottom bg-white p-3" data-aos="zoom-in">
+          <h3 class="text-center text-dark" data-aos="fade-up"
+          data-aos-duration="3000">Available on</h3>
           <div class="container text-center">
             <img src="/assets/Images/5a902db97f96951c82922874 2.png" alt="store"/>
             <img src="/assets/Images/google-play-badge 2.png" alt="store"/>
@@ -50,23 +54,23 @@
 
       <div class="gallery col px-3 pt-2">
         <div class="row mt-5">
-          <div class="im pl-4" data-toggle="modal" data-target="#img">
+          <div class="im pl-4" data-aos="fade-down-right" data-toggle="modal" data-target="#img" data-aos-duration="3000">
             <img src="/assets/Images/Scan.png" alt="image" class="inline-block">
           </div>
-          <div class="im-2 pl-4" data-toggle="modal" data-target="#img1">
+          <div class="im-2 pl-4" data-aos="fade-down-right" data-aos-duration="3000" data-toggle="modal" data-target="#img1">
             <img src="/assets/Images/Capture.png" alt="image" class="inline-block">
           </div>
-          <div class="im-3 pl-4" data-toggle="modal" data-target="#img2">
+          <div class="im-3 pl-4" data-aos="fade-down-right" data-aos-duration="3000" data-toggle="modal" data-target="#img2">
             <img src="/assets/Images/Scanning.png" alt="image" class="inline-block">
           </div>
           <div class="sec row">
-            <div class="im-4 pl-4" data-toggle="modal" data-target="#img3">
+            <div class="im-4 pl-4" data-aos="zoom-in-down" data-aos-duration="3000" data-toggle="modal" data-target="#img3">
               <img src="/assets/Images/Add to cart.png" alt="image" class="inline-block">
             </div>
-            <div class="im-5 pl-4" data-toggle="modal" data-target="#img4">
+            <div class="im-5 pl-4" data-aos="zoom-in-down" data-aos-duration="3000" data-toggle="modal" data-target="#img4">
               <img src="/assets/Images/Payment.png" alt="image" class="inline-block">
             </div>
-            <div class="im-6 pl-4" data-toggle="modal" data-target="#img5">
+            <div class="im-6 pl-4" data-aos="zoom-in-down" data-aos-duration="3000" data-toggle="modal" data-target="#img5">
               <img src="/assets/Images/Hurray.png" alt="image" class="inline-block">
             </div>
           </div>
@@ -127,14 +131,20 @@
         </div>
       </div>
 
-      <div class="btmt container text-center">
+      <div class="btmt container text-center" data-aos="zoom-in">
+        <h3 class="text-center text-dark" data-aos="fade-up"
+          data-aos-duration="3000">Available on</h3>
         <img src="/assets/Images/5a902db97f96951c82922874 2.png" alt="store">
         <img src="/assets/Images/google-play-badge 2.png" alt="store">
       </div>
 
     </div>
-
+  
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

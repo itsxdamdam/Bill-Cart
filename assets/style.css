@@ -1,10 +1,11 @@
-<?php
-    header('Content-type: text/css; charset:UTF-8');
-?>
-
 *{
   margin: 0px;
   padding: 0px;
+}
+
+body[data-aos-duration='4000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='4000'] {
+  transition-duration: 40000ms;
 }
 
 body{
